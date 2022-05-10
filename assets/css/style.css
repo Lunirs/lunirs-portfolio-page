@@ -16,13 +16,26 @@ main {
 
 h3 {
   font-size: 40px;
+  text-align: center;
 }
+
+span {
+  background-color: #2b2d2f;
+  margin: auto;
+  position: absolute;
+  top: -10;
+  right: 10;
+  color: rgba(255, 255, 240, 0.726);
+  border: solid 2px rgba(255, 255, 240, 0.726);
+  font-weight: 900;
+}
+
 nav li,
 nav li a {
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
-  color: rgba(109, 33, 160, 0.521);
+  color: rgba(255, 255, 240, 0.726);
   margin: 0 7px;
   font-weight: 900;
 }
@@ -33,7 +46,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 5px 0;
-  background-color: salmon;
+  background-color: #2b2d2f;
 }
 
 header h1 {
@@ -79,9 +92,6 @@ nav {
   text-align: center;
 }
 
-.content-container {
-}
-
 .flex-box {
   display: flex;
   flex-wrap: wrap;
@@ -89,10 +99,18 @@ nav {
   margin: 0 50px;
 }
 
+#seo-refactor {
+  background-image: url(../image/seo-site-refactor.png);
+}
+
+#css-cheatsheet {
+  background-image: url(../image/css-cheatsheet.png);
+}
+
 .flex-content {
   display: flex;
   border: 3px solid #ffffff;
-  background-color: lavenderblush;
+  background-color: #2b2d2f;
   color: black;
   min-height: 200px;
   max-height: 200px;
