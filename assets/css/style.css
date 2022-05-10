@@ -14,20 +14,29 @@ main {
   padding-top: 40px;
 }
 
+h1,
+h2,
 h3 {
   font-size: 40px;
   text-align: center;
+  padding: 30px 50px;
 }
 
 span {
   background-color: #2b2d2f;
   margin: auto;
-  position: absolute;
-  top: -10;
-  right: 10;
+  position: relative;
   color: rgba(255, 255, 240, 0.726);
-  border: solid 2px rgba(255, 255, 240, 0.726);
-  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+p {
+  padding: 50px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 nav li,
@@ -107,13 +116,22 @@ nav {
   background-image: url(../image/css-cheatsheet.png);
 }
 
+#About-Me img {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  border: 2px solid rgba(255, 255, 240, 0.726);
+  box-shadow: 0 0 30px rgba(255, 255, 240, 0.726);
+}
+
 .flex-content {
   display: flex;
   border: 3px solid #ffffff;
   background-color: #2b2d2f;
   color: black;
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 300px;
+  max-height: 300px;
   padding-top: 30px;
   padding-right: 40px;
   margin: 10px;
@@ -137,8 +155,7 @@ nav {
   flex-basis: 100%;
 }
 
-#Contact-Me ul,
-#Contact-Me h3 {
+#Contact-Me ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
