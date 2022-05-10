@@ -14,6 +14,9 @@ main {
   padding-top: 40px;
 }
 
+h3 {
+  font-size: 40px;
+}
 nav li,
 nav li a {
   font-weight: 400;
@@ -83,6 +86,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 50px;
 }
 
 .flex-content {
@@ -100,8 +104,8 @@ nav {
   text-decoration: none;
   flex-wrap: wrap;
   flex-basis: 30%;
-  transform: skew(-20deg);
-  min-width: 350px;
+  transform: skew(-15deg);
+  min-width: 280px;
   justify-content: flex-end;
   transition: all 0.5s ease-out;
 }
@@ -133,16 +137,26 @@ nav {
   color: rgba(255, 255, 240, 0.726);
   margin: 0 7px;
   font-weight: 900;
+  transition: all 0.5s ease-in-out 0s;
 }
 
+#Contact-Me li a:hover {
+  color: salmon;
+}
 @media screen and (max-width: 980px) {
   #image figcaption {
     font-size: 24px;
   }
+  .flex-content:first-child {
+    flex-basis: 90%;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   #image figcaption {
     font-size: 20px;
+  }
+  .flex-content:first-child {
+    flex-basis: 72%;
   }
 }
