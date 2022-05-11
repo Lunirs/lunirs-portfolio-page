@@ -8,6 +8,8 @@ Using my currenty knowledge of HTML and CSS, I designed my portfolio page to be 
 
 I will be updating this page as I learn and will be updating the README file here with more updates.
 
+Here is a link to the deployed site: [Click Here](https://lunirs.github.io/lunirs-portfolio-page/)
+
 ### Updates
 
 1.  TBD
