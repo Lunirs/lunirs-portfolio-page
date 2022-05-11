@@ -1,8 +1,9 @@
+/* Selectors that affect the main portions of the html such as universal, body, main, headers, spans, paragraphs */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Gruppo;
 }
 
 body {
@@ -25,7 +26,7 @@ h3 {
 span {
   background-color: #2b2d2f;
   margin: auto;
-  position: relative;
+  position: absolute;
   color: rgba(255, 255, 240, 0.726);
   margin-bottom: 50px;
 }
@@ -33,21 +34,9 @@ span {
 p {
   padding: 50px;
   font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
 }
 
-nav li,
-nav li a {
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-  color: rgba(255, 255, 240, 0.726);
-  margin: 0 7px;
-  font-weight: 900;
-}
+/* Header and Nav bar Styles */
 
 header {
   display: flex;
@@ -68,6 +57,17 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
+
+nav li,
+nav li a {
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(255, 255, 240, 0.726);
+  margin: 0 7px;
+  font-weight: 900;
+}
+
 .nav-link {
   list-style-type: none;
   display: flex;
@@ -83,8 +83,10 @@ nav {
 }
 
 .nav-link li a:hover {
-  color: aqua;
+  color: salmon;
 }
+
+/*  Banner Image Styles */
 
 #banner-image img {
   width: 100%;
@@ -101,6 +103,7 @@ nav {
   text-align: center;
 }
 
+/* Main body section (Flex box Container) */
 .flex-box {
   display: flex;
   flex-wrap: wrap;
@@ -108,12 +111,9 @@ nav {
   margin: 0 50px;
 }
 
-#seo-refactor {
-  background-image: url(../image/seo-site-refactor.png);
-}
-
-#css-cheatsheet {
-  background-image: url(../image/css-cheatsheet.png);
+/* Main Content About Me Section */
+#About-Me {
+  padding-bottom: 50px;
 }
 
 #About-Me img {
@@ -123,6 +123,12 @@ nav {
   max-height: 300px;
   border: 2px solid rgba(255, 255, 240, 0.726);
   box-shadow: 0 0 30px rgba(255, 255, 240, 0.726);
+  margin-left: 40px;
+}
+
+/* Main Content Projects section */
+#Projects {
+  padding-bottom: 50px;
 }
 
 .flex-content {
@@ -155,6 +161,16 @@ nav {
   flex-basis: 100%;
 }
 
+/* background images for projects */
+#seo-refactor {
+  background-image: url(../image/seo-site-refactor.png);
+}
+
+#css-cheatsheet {
+  background-image: url(../image/css-cheatsheet.png);
+}
+
+/* Main Content Contact Me Section */
 #Contact-Me ul {
   display: flex;
   flex-wrap: wrap;
@@ -178,6 +194,8 @@ nav {
 #Contact-Me li a:hover {
   color: salmon;
 }
+
+/* Media Queries for Tablet size */
 @media screen and (max-width: 980px) {
   #image figcaption {
     font-size: 24px;
@@ -197,8 +215,15 @@ nav {
   #Contact-Me ul li {
     padding: 5px;
   }
+
+  #About-Me img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
+/* Media Queries for Mobile */
 @media screen and (max-width: 768px) {
   #image figcaption {
     font-size: 20px;
@@ -217,5 +242,26 @@ nav {
 
   #Contact-Me ul li {
     padding: 5px;
+  }
+
+  #About-Me img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Media Queries for Desktop size */
+@media screen and (min-width: 981px) {
+  #About-Me,
+  #Projects,
+  #Contact-Me {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #Contact-Me ul li {
+    padding: 40px;
   }
 }
