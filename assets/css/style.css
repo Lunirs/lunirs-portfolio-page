@@ -1,4 +1,10 @@
 /* Selectors that affect the main portions of the html such as universal, body, main, headers, spans, paragraphs */
+:root {
+  --dark-color: #2b2d2f;
+  --text-color: rgba(255, 255, 240, 0.726);
+  --hover-color: salmon;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +13,8 @@
 }
 
 body {
-  background-color: #2b2d2f;
-  color: rgba(255, 255, 240, 0.726);
+  background-color: var(--dark-color);
+  color: var(--text-color);
 }
 
 main {
@@ -24,10 +30,10 @@ h3 {
 }
 
 span {
-  background-color: #2b2d2f;
+  background-color: var(--dark-color);
   margin: auto;
   position: absolute;
-  color: rgba(255, 255, 240, 0.726);
+  color: var(--text-color);
   margin-bottom: 50px;
 }
 
@@ -44,12 +50,12 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 5px 0;
-  background-color: #2b2d2f;
+  background-color: var(--dark-color);
 }
 
 header h1 {
   padding: 10px 10px;
-  color: rgba(255, 255, 240, 0.726);
+  color: var(--text-color);
   margin-right: auto;
 }
 
@@ -63,9 +69,10 @@ nav li a {
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
-  color: rgba(255, 255, 240, 0.726);
+  color: var(--text-color);
   margin: 0 7px;
   font-weight: 900;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .nav-link {
@@ -74,16 +81,8 @@ nav li a {
   flex-direction: row;
 }
 
-.nav-link li {
-  display: flex;
-}
-
-.nav-link li a {
-  transition: all 0.5s ease-in-out 0s;
-}
-
 .nav-link li a:hover {
-  color: salmon;
+  color: var(--hover-color);
 }
 
 /*  Banner Image Styles */
@@ -121,8 +120,8 @@ nav li a {
   max-width: 300px;
   min-height: 300px;
   max-height: 300px;
-  border: 2px solid rgba(255, 255, 240, 0.726);
-  box-shadow: 0 0 30px rgba(255, 255, 240, 0.726);
+  border: 2px solid var(--text-color);
+  box-shadow: 0 0 30px var(--text-color);
   margin-left: 40px;
 }
 
@@ -134,7 +133,7 @@ nav li a {
 .flex-content {
   display: flex;
   border: 3px solid #ffffff;
-  background-color: #2b2d2f;
+  background-color: var(--dark-color);
   color: black;
   min-height: 300px;
   max-height: 300px;
@@ -154,7 +153,7 @@ nav li a {
 
 .flex-content:hover,
 .flex-cotent:focus {
-  background-color: salmon;
+  background-color: var(--hover-color);
 }
 
 .flex-content:first-child {
@@ -185,14 +184,14 @@ nav li a {
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
-  color: rgba(255, 255, 240, 0.726);
+  color: var(--text-color);
   margin: 0 7px;
   font-weight: 900;
   transition: all 0.5s ease-in-out 0s;
 }
 
 #Contact-Me li a:hover {
-  color: salmon;
+  color: var(--hover-color);
 }
 
 /* Media Queries for Tablet size */
