@@ -161,6 +161,10 @@ nav li a {
 }
 
 /* background images for projects */
+#carbon-tracker {
+  background-image: url(../image/carbon-tracker-about-page.png);
+}
+
 #seo-refactor {
   background-image: url(../image/seo-site-refactor.png);
 }
